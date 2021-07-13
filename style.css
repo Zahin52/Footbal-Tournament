@@ -19,27 +19,66 @@ nav style
 
 .nav-bar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0px;
     position: absolute;
-    width: 1162px;
+    width: 80.69%;
     height: 44px;
     left: 156px;
     top: 42px;
-    justify-content: space-around;
+
 }
 
-.nav-item ul {
+.nav-item {
+    height: 100%;
+
+}
+
+.nav-item .nav-links {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 100%;
 
 }
 
-.nav-item ul li {
+.nav-item .nav-links a {
     list-style: none;
-    color: blue;
+    color: #ffffff;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 36px;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-item .nav-links a:hover {
+
+    color: yellow;
+    border-bottom: 1px solid yellow;
+
+}
+
+.nav-item .login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 24px;
+    position: static;
+    width: 123px;
+    height: 44px;
+    background: #E02C6D;
+    border: none;
+    color: white;
+}
+
+.nav-item .login span {
+    font-size: 1.2em;
+}
+
+.nav-item .login span:first-child {
+    margin: 0px 8px;
 }
 
 /* banner section */
@@ -67,7 +106,7 @@ nav style
     top: 207px;
 }
 
-.banner-title button {
+.banner-title .button {
     background-color: #E02C6D;
     position: absolute;
     width: 168px;
@@ -76,15 +115,18 @@ nav style
     top: 464px;
     padding: 10px 24px;
     border: none;
-}
-
-.banner-title button a {
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 24px;
     color: #FFFFFF;
-    margin: 0 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner-title .button .fa-arrow-right {
+    margin-left: 16px;
 }
 
 .banner-image {
