@@ -1,5 +1,6 @@
 /* google font poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -158,8 +159,9 @@ players section
     display: grid;
     grid-template-columns: repeat(3, 330px);
     /* grid-template-rows: repeat(4, 474px); */
-    grid-gap: 30px;
-    padding: 70px 180px;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 70px 150px;
 }
 
 .player {
@@ -193,4 +195,45 @@ players section
     font-weight: normal;
     color: #6C6C6C;
     margin-bottom: 18px;
+}
+
+/* highlights section */
+
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 130px;
+}
+
+.highlights div:first-child {
+    width: 50%;
+    padding-right: 66px;
+}
+
+.highlights .highlights-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+
+}
+
+.highlights .highlights-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+
+
+}
+
+.highlights .highlights-image {
+    width: 50%;
+
+}
+
+.highlights .highlights-image img {
+    width: 100%;
 }
