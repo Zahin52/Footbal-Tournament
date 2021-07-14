@@ -12,11 +12,9 @@ body {
         sans-serif;
 }
 
-/* 
-----------
-nav style 
-----------
-*/
+/* ===========
+Nav css
+==============*/
 
 .nav-bar {
     display: flex;
@@ -26,7 +24,7 @@ nav style
     position: absolute;
     width: 80.69%;
     height: 44px;
-    left: 156px;
+    left: 10.8%;
     top: 42px;
     z-index: 1;
 
@@ -68,6 +66,7 @@ nav style
     font-size: 1.7em;
     color: white;
     display: none;
+    cursor: pointer;
 }
 
 .nav-item>.nav-links {
@@ -121,7 +120,9 @@ nav style
     margin: 0px 8px;
 }
 
-/* banner section */
+/* ===========
+Banner css 
+==============*/
 
 .banner {
     width: 100%;
@@ -200,9 +201,9 @@ nav style
 }
 
 
-/* 
-players section
- */
+/* ===========
+Players css
+==============*/
 
 .players {
     display: grid;
@@ -210,7 +211,7 @@ players section
     /* grid-template-rows: repeat(4, 474px); */
     column-gap: 30px;
     row-gap: 30px;
-    padding: 70px 150px;
+    padding: 70px 10.41%;
 }
 
 .player {
@@ -246,13 +247,14 @@ players section
     margin-bottom: 18px;
 }
 
-/* highlights section */
-
+/* ===========
+Highlights css
+==============*/
 .highlights {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 130px;
+    padding: 70px 9%;
     flex-wrap: wrap;
 }
 
@@ -307,8 +309,9 @@ players section
     width: 100%;
 }
 
-/* gallary images 
- */
+/* ===========
+Gallary css
+==============*/
 .gallary {
     padding: 0px 100px;
 }
@@ -342,7 +345,9 @@ players section
     transform: scale(1.2);
 }
 
-/* Man of the match */
+/* ===========
+Man of the match  css
+==============*/
 .man-of-the-match {
     padding: 0 100px;
     margin: 20px 0px;
@@ -369,7 +374,7 @@ players section
 }
 
 .man-of-the-match .player-of-the-match .winner-player:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-3.5px) scale(1.02);
 
 }
 
@@ -378,8 +383,9 @@ players section
 
 }
 
-
-/* footer section  */
+/* ===========
+Footer css
+==============*/
 footer {
     background: white;
     display: flex;
@@ -405,6 +411,7 @@ footer .social-links a {
     font-size: 1.5em;
     margin: 0 7px;
     color: #6C6C6C;
+    text-decoration: none;
 }
 
 footer .copy-right {
@@ -413,15 +420,11 @@ footer .copy-right {
     margin-bottom: 63px;
 }
 
-/* media query  */
+/* media query max-width 600  */
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:600px) {
     body {
         font-size: 75%;
-    }
-
-    .nav-bar {
-        left: 8%;
     }
 
     .nav-item .hamburger-menu {
@@ -541,4 +544,66 @@ footer .copy-right {
     footer {
         margin-top: 40px;
     }
+}
+
+/* media query min-width 601 to max-width:1050 */
+
+@media only screen and (min-width: 601px) and (max-width:1050px) {
+
+    body {
+        font-size: 85%;
+    }
+
+    /* .banner-title {
+        width: 35%;
+    } */
+
+    .banner-title>h1 {
+        font-size: 38px;
+        line-height: normal
+    }
+
+    /* .banner>div:last-child {
+        width: 35%;
+
+    } */
+
+    .players {
+
+        grid-template-columns: repeat(2, 1fr);
+        /* column-gap: 30px; */
+        row-gap: 24px;
+        padding: 45px 40px;
+    }
+
+    .player {
+        /* width: 80% ; */
+        height: auto;
+    }
+
+    .highlights {
+        padding: 20px 5%;
+    }
+
+    .highlights div:first-child {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+
+    }
+
+    .highlights .highlights-image {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .gallary-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .man-of-the-match .player-of-the-match {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
