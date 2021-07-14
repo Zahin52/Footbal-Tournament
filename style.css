@@ -275,7 +275,7 @@ players section
     font-size: 3em;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 50px 0;
 }
 
 .gallary-images {
@@ -287,6 +287,7 @@ players section
 .gallary-images .image {
     border: 5px solid orange;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .gallary-images .image img {
@@ -298,6 +299,37 @@ players section
 .gallary-images .image:hover img {
     transform: scale(1.2);
 }
+
+/* Man of the match */
+.man-of-the-match {
+    padding: 0 100px;
+    margin: 20px 0px;
+}
+
+.man-of-the-match .title {
+    margin: 50px 0px;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.man-of-the-match .player-of-the-match {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.man-of-the-match .player-of-the-match .winner-player {
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+.man-of-the-match .player-of-the-match .winner-player img {
+    width: 100%;
+
+}
+
 
 /* footer section  */
 footer {
