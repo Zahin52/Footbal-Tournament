@@ -7,9 +7,11 @@
     padding: 0;
 }
 
+html,
 body {
     font-family: 'Poppins',
         sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* ===========
@@ -54,6 +56,15 @@ Nav css
 
 .hamburger-menu {
     display: none;
+}
+
+.hamburger-menu .fa-times {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 90%;
 }
 
 .hamburger-menu a {
