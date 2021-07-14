@@ -34,6 +34,7 @@ nav style
 
 .nav-bar .hamburger-menu {
     display: none;
+    z-index: 3;
 
 }
 
@@ -57,6 +58,11 @@ nav style
     display: none;
 }
 
+.hamburger-menu a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .nav-item .fa-bars {
     font-size: 1.7em;
@@ -74,7 +80,7 @@ nav style
 
 .nav-item>.nav-links a {
     font-size: 1em;
-    list-style: none;
+    text-decoration: none;
     color: #ffffff;
     cursor: pointer;
     margin-right: 36px;
@@ -99,6 +105,12 @@ nav style
     border: none;
     color: white;
     text-decoration: none;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.nav-item .login:hover {
+    color: yellow;
 }
 
 .nav-item .login span {
@@ -124,13 +136,12 @@ nav style
 
 .banner-title {
     width: 40%;
+    transition: all 1s ease;
 
 }
 
 .banner-title h1 {
-    /* position: absolute; */
-    /* width: 485px;
-    height: 230px; */
+
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -138,17 +149,12 @@ nav style
     line-height: 80px;
     color: #FFFFFF;
     margin-bottom: 27px;
-    /* left: 156px;
-    top: 207px; */
+
 }
 
 .banner-title .button {
     background-color: #E02C6D;
-    /* position: absolute; */
-    /* width: 168px;
-    height: 44px; */
-    /* left: 156px;
-    top: 464px; */
+
     padding: 10px 24px;
     border: none;
     text-decoration: none;
@@ -156,6 +162,7 @@ nav style
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+    transition: all 1s linear;
 }
 
 .banner-title .button:hover {
@@ -168,22 +175,30 @@ nav style
 
 .banner>div:last-child {
     width: 40%;
+    transition: all 1s ease;
 }
 
 .banner-image {
 
     width: 100%;
-    /* position: absolute; */
-    /* width: 556.01px; */
-    /* width: 40%; */
-    /* height: 438px; */
-    /* left: 743px;
-    top: 153px; */
+
 }
 
 .banner-image img {
     width: 100%;
 }
+
+.banner:hover .banner-title {
+    transform: scale(1.05);
+
+
+}
+
+.banner:hover>div:last-child {
+    transform: scale(1.05);
+
+}
+
 
 /* 
 players section
