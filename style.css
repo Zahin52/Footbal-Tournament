@@ -267,32 +267,36 @@ players section
 
 /* gallary images 
  */
+.gallary {
+    padding: 0px 100px;
+}
+
+.gallary .title {
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
 .gallary-images {
-
-    padding: 10px 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.gallary-images>div {
-    /* width: 300px; */
+.gallary-images .image {
+    border: 5px solid orange;
     overflow: hidden;
-    /* height: 400px; */
-}
-/* 
-.gallary-images>div:nth-child(1) {
-    grid-column: 1/4;
 }
 
-.gallary-images>div:nth-child(2) {
-    grid-column: 1/3;
-    grid-row: 2/3;
-} */
-
-.gallary-images>div img {
+.gallary-images .image img {
     width: 100%;
+    height: 100%;
+    transition: transform 1.2s ease;
+}
+
+.gallary-images .image:hover img {
+    transform: scale(1.2);
 }
 
 /* footer section  */
@@ -391,6 +395,14 @@ footer .copy-right {
     .highlights .highlights-image {
         width: 100%;
         padding: 0;
+    }
+
+    .gallary {
+        padding: 10px 15px;
+    }
+
+    .gallary-images {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     footer {
