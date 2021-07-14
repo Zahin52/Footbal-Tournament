@@ -322,6 +322,12 @@ players section
 .man-of-the-match .player-of-the-match .winner-player {
     border-radius: 10px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: all 1s ease;
+
+}
+
+.man-of-the-match .player-of-the-match .winner-player:hover {
+    transform: translateY(-5px) scale(1.05);
 
 }
 
@@ -434,6 +440,14 @@ footer .copy-right {
     }
 
     .gallary-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .man-of-the-match {
+        padding: 0 15px;
+    }
+
+    .man-of-the-match .player-of-the-match {
         grid-template-columns: repeat(1, 1fr);
     }
 
