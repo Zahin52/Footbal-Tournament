@@ -442,8 +442,8 @@ footer .copy-right {
         display: block;
         position: fixed;
         left: -100%;
-        top: 86px;
-        height: calc(100% - 86px);
+        top: 0;
+        height: calc(100% - 10px);
         width: 100vw;
         transition: all .8s ease;
     }
@@ -472,7 +472,7 @@ footer .copy-right {
 
     #nav-checkbox:checked+.hamburger-menu {
         left: 0;
-        background-color: #E02C6D;
+        background-color: #e02c6e9f;
     }
 
     .nav-item .fa-bars {
