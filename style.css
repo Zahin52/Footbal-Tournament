@@ -67,8 +67,6 @@ nav style
     flex-direction: row;
     align-items: center;
     padding: 10px 24px;
-    width: 123px;
-    height: 44px;
     background: #E02C6D;
     border: none;
     color: white;
@@ -76,7 +74,7 @@ nav style
 }
 
 .nav-item .login span {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .nav-item .login span:first-child {
@@ -157,7 +155,7 @@ players section
 
 .players {
     display: grid;
-    grid-template-columns: repeat(3, 330px);
+    grid-template-columns: repeat(3, 1fr);
     /* grid-template-rows: repeat(4, 474px); */
     column-gap: 30px;
     row-gap: 30px;
@@ -190,7 +188,7 @@ players section
 }
 
 .player .player-details {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 26px;
     font-weight: normal;
     color: #6C6C6C;
@@ -204,10 +202,15 @@ players section
     justify-content: space-between;
     align-items: center;
     padding: 70px 130px;
+    flex-wrap: wrap;
+}
+
+.highlights div {
+    height: 100%;
 }
 
 .highlights div:first-child {
-    width: 50%;
+    width: 40%;
     padding-right: 66px;
 }
 
@@ -222,11 +225,26 @@ players section
 .highlights .highlights-description {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 28px;
     color: #6C6C6C;
+    margin-top: 8px;
+    margin-bottom: 28px;
+}
 
+.highlights .button {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+}
 
+.highlights .button:hover {
+    color: yellow;
+}
+
+.highlights .button .fa-arrow-right {
+    margin-left: 8px;
 }
 
 .highlights .highlights-image {
@@ -236,4 +254,37 @@ players section
 
 .highlights .highlights-image img {
     width: 100%;
+}
+
+footer {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 88px;
+}
+
+footer .footer-logo {
+    width: 33.6%;
+}
+
+footer .footer-logo img {
+    width: 100%;
+}
+
+footer .social-links {
+    margin: 20px 0;
+}
+
+footer .social-links a {
+    font-size: 1.5em;
+    margin: 0 7px;
+    color: #6C6C6C;
+}
+
+footer .copy-right {
+    font-size: 1.11em;
+    line-height: 24px;
+    margin-bottom: 63px;
 }
